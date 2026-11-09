@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Paul Orife</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link your existing stylesheet or embed styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Page Header Title Section */
+        .projects-header {
+            background-color: #0F172A;
+            padding: 60px 40px;
+            text-align: center;
+            border-bottom: 1px solid #1E293B;
+        }
+
+        .projects-header h1 {
+            font-size: 42px;
+            margin: 0 0 10px 0;
+        }
+
+        .projects-header p {
+            color: #94A3B8;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* Projects Section Grid */
+        .projects-section {
+            background-color: #0B132B;
+            padding: 80px 40px;
+            min-height: 60vh;
+        }
+
+        .projects-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            background-color: #0F172A;
+            border: 1px solid #1E293B;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            border-color: #2563EB;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #1E293B;
+        }
+
+        .project-info {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #FFFFFF;
+        }
+
+        .project-info p {
+            color: #94A3B8;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* Card Action Links */
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-btn {
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-live {
+            background-color: #2563EB;
+            color: #FFFFFF;
+        }
+
+        .btn-code {
+            background-color: #1C2541;
+            color: #E2E8F0;
+            border: 1px solid #1E293B;
+        }
+
+        .btn-code:hover {
+            background-color: #1E293B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <div class="main-header">
+        <div class="logo">
+            <span>&lt;/&gt; </span>Paul Orife
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Title Header Banner -->
+    <div class="projects-header">
+        <h1>My <span>Projects</span></h1>
+        <p>A collection of front-end web applications and design challenges I've built.</p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="projects-section">
+        <div class="projects-grid">
+
+            <!-- Project 1 Card -->
+            <div class="project-card">
+                <img src="./Projects/youtube_clone/images/youtube-logo-.jpg" alt="YouTube Clone" class="project-img">
+                <div class="project-info">
+                    <h3>YouTube Clone</h3>
+                    <p>A fully responsive video streaming homepage clone built strictly using HTML5 and CSS Flexbox grid structures.</p>
+                    <div class="project-links">
+                        <a href="./Projects/youtube_clone/index.html" target="_blank" class="project-btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/project-repo" target="_blank" class="project-btn btn-code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 Card -->
+            <div class="project-card">
+                <img src="./Projects/tindog/images/snippet.png" alt="Portfolio Website" class="project-img">
+                <div class="project-info">
+                    <h3>TinDog</h3>
+                        <p>A sleek, responsive landing page for a dog dating app built with HTML5 and custom CSS layouts, inspired by Tinder's UI design.</p>
+                    <div class="project-links">
+                        <a href="./Projects/tindog/index.html" target="_blank" class="project-btn btn-live">Live Demo</a>
+                        <a href="https://github.com/orifepaul83-ship-it /portfolio-repo" target="_blank" class="project-btn btn-code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Shared Footer -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/orife_paul?utm_source=qr&dlrf=MTN5Z3N1NzU1OXQ3ZA==" target="_blank">Instagram</a>
+            <a href="https://www.snapchat.com/add/itz_orife?share_id=Dfqdi4r0GFM&locale=en-US" target="_blank">Snapchat</a>
+            <a href="index.html">Website</a>
+        </div>
+        <p class="copyright-text">&copy; Paul Orife @ LASU.</p>
+    </div>
+
+</body>
+</html>

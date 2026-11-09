@@ -1,0 +1,418 @@
+  body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #E2E8F0; 
+            background-color: #0B132B;
+            margin: 0;
+            
+        }
+
+            .main-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                background-color: #0B132B;    
+                color: #FFFFFF;
+                position: sticky;
+                top: 0;
+                z-index: 1000; 
+                border-bottom: 1px solid #1E293B; 
+            }
+            
+
+            /* Align Links and Dropdown Inline */
+            .links {
+                display: flex;
+                align-items: center;
+            }
+
+            /* Dropdown Container */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .dropdown .dropdown-btn {
+                margin-left: 0; /* Reset link margin inside container */
+            }
+
+            /* Hidden Social Box */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                background-color: #0F172A; /* Slate navy matching cards */
+                min-width: 150px;
+                border-radius: 8px;
+                border: 1px solid #1E293B;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+                padding: 10px 0;
+                z-index: 1001;
+            }
+
+            /* Social Links Inside Dropdown */
+            .dropdown-content a {
+                color: #E2E8F0;
+                padding: 10px 20px;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+                margin-left: 0;
+                transition: background-color 0.2s ease, color 0.2s ease;
+            }
+
+            /* Hover Effect for Links inside Dropdown */
+            .dropdown-content a:hover {
+                background-color: #1C2541;
+                color: #2563EB;
+            }
+
+            /* Show Menu on Hover */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .links a{
+            margin-left: 20px;
+            color: #E2E8F0;
+            text-decoration: none;
+            }
+
+            .logo{
+                font-weight: bold;
+                font-size: 2rem;
+            }
+
+            .hero-section{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                 /* Added some padding to the hero section for breathing room */
+                gap: 200px;
+                background-color: #0F172A; /* Lighter slate navy shade */
+                padding: 60px 40px;
+                border-bottom: 1px solid #1E293B;
+                }
+
+            span{
+                color: #2563EB;
+            }
+
+            h1{
+                font-size:60px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+
+            /* FIXED: Targeted individual elements separately and reduced bottom margin */
+            .hero-subtitle {
+                margin-bottom: -20px; /* Pulls the name closer to "Hello, I'm" */
+            }
+
+            .hero-title {
+                margin-top: 0;
+                margin-bottom:-15px;
+            }
+
+            .btn1{
+                background-color: #2563EB;
+                color: white;
+                border-radius: 30px;
+                padding: 15px 25px;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+                margin-right: 20px;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+
+            .btn1:hover {
+                background-color: #1d4ed8; /* Slightly deeper blue */
+                transform: translateY(-3px); /* Lifts the button slightly */
+                box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4); /* Adds a nice blue glow shadow */
+            }          
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .hero-description,
+            .about-description {
+                line-height: 2; /* Added good line spacing for readability */
+                margin-bottom: 30px;
+            }
+
+            img{
+                height: 350px;
+                width: 350px;
+                border-radius: 50%;
+            }
+
+            .hero-text{
+                margin-bottom: 0px;
+            }
+            .main-header,
+            .hero-section, .about-section,
+            .skills-section {
+                border-bottom: 1px solid #1E293B; /* Soft slate-blue line */
+            }
+        
+            .about-section{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 180px;
+                padding: 80px 40px;
+            }
+
+            .about-description{
+                margin-top: -30px;
+            }
+
+            .about-title{
+                margin-top: -50px;
+            }
+
+            .interest-tags {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                margin-top: 25px;
+            }
+
+            .tag {
+                background-color: #1C2541; /* Dark card shade */
+                color: #E2E8F0;
+                padding: 8px 18px;
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid #1E293B;
+            }
+
+            .about-image-card img {
+            width: 700px;
+            height: 280px;
+            object-fit:cover ; /* Keeps image sharp without stretching */
+            border-radius: 5px;
+            border: 1px solid #1E293B;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Skills Section Outer Layout */
+        .skills-section {
+            background-color: #0F172A; /* Alternating lighter background */
+            padding: 80px 40px;
+            border-bottom: 1px solid #1E293B;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        /* Side-by-Side Cards Container */
+        .skills-container {
+            
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+
+        }
+
+        /* Individual Skill Card */
+        .skill-card {
+            background-color: #0B132B; /* Darker card background */
+            border: 1px solid #1E293B;
+            border-radius: 16px;
+            padding: 40px 30px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 450px;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Badge Icon Image Sizing */
+        .card-icon img {
+            height: 60px;
+            width: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .skill-card h3 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .skill-card p {
+            color: #94A3B8; /* Softer text color for descriptions */
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .skills-section h2 {
+            margin-top: -50px;
+
+        }
+
+        .footer-container {
+            background-color: #0B132B; /* Base dark navy background */
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 1px solid #1E293B; /* Subtle top dividing line */
+        }
+
+        .footer-links {
+            margin-bottom: 25px;
+        }
+
+        .footer-links a {
+            color: #48CAE4; /* Cyan/teal accent link color matching your layout style */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 20px; /* Horizontal spacing between links */
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #2563EB; /* Highlight color when hovered */
+        }
+
+        .copyright-text {
+            color: #94A3B8; /* Softer text color */
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 220px;          
+            object-fit: cover;        
+            border-radius: 0px;       
+            border-bottom: 1px solid #1E293B;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; 
+        }
+
+
+        /* ==========================================
+   Responsive Media Query for Mobile Devices
+   ========================================== */
+@media screen and (max-width: 768px) {
+    
+    /* Header Adjustments */
+    .main-header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .dropdown {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Hero Section Stack */
+    .hero-section {
+        flex-direction: column-reverse; /* Puts image on top, text on bottom */
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px; /* Scales down hero title */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Center hero image on mobile */
+    .hero-image img {
+        height: 280px;
+        width: 280px;
+    }
+
+    /* About Section Stack */
+    .about-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .about-title {
+        margin-top: 0;
+    }
+
+    .about-description {
+        margin-top: 0;
+    }
+
+    .interest-tags {
+        justify-content: center;
+    }
+
+    .about-image-card img {
+        width: 100%; /* Makes the pc setup image responsive to screen width */
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Skills Container Stack */
+    .skills-section {
+        padding: 50px 20px;
+    }
+
+    .skills-section h2 {
+        margin-top: 0;
+    }
+
+    .skills-container {
+        gap: 30px;
+    }
+
+    .skill-card {
+        max-width: 100%;
+    }
+
+    /* Footer Layout */
+    .footer-container {
+        padding: 40px 20px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
