@@ -1,0 +1,93 @@
+      p{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      body{
+        font-family: Roboto, Arial;
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 96px;
+        padding-right: 24px;
+        background-color: rgb(248, 248, 248);
+      }
+
+      /* ==========================================
+   Mobile & Tablet Responsiveness for YouTube Clone
+   ========================================== */
+@media screen and (max-width: 900px) {
+
+    body {
+        padding: 65px 0 0;
+        font-size: 16px;
+    }
+    
+    /* 1. Hide the fixed sidebar on smaller screens to maximize video viewing space */
+    .sidebar {
+        display: none;
+    }
+
+    /* 2. Adjust main container margin since sidebar is hidden */
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0;
+    }
+
+    /* 3. Collapse header spacing for mobile screens */
+    .header {
+        padding: 0 12px;
+        justify-content: space-between;
+    }
+
+    /* Shrink middle search bar area */
+    .middle-section {
+        flex: 1;
+        margin-left: 12px;
+        margin-right: 12px;
+        max-width: none;
+    }
+
+    .left-section .hamburger-menu {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .right-section {
+        width: auto;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Hide less important right-section icons on smaller phones if needed */
+    .right-section {
+        gap: 10px;
+    }
+
+    .youtube-apps-icons-container,
+    .upload-icon-container {
+        display: none; /* Keeps user profile and notifications visible */
+    }
+
+    /* 4. Make video grid fit 1 column on mobile or auto-wrap fluidly */
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 video per row on phones */
+        column-gap: 0;
+        row-gap: 28px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .voice-search-button {
+        display: none;
+    }
+}
+
+/* Tablet range (2 columns) */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 videos per row on tablets */
+    }
+}
